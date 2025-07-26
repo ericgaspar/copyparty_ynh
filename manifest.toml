@@ -46,6 +46,7 @@ ram.runtime = "50M"
     [resources.sources.main]
     in_subdir = false
     extract = false
+    rename ="copyparty-sfx.py"
     url = "https://github.com/9001/copyparty/releases/download/v1.18.4/copyparty-sfx.py"
     sha256 = "ad35f6c909deee2f75bd725a52894b6584a308d29575096f82fd71f8dd94b031"
 
