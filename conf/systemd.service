@@ -1,13 +1,14 @@
 [Unit]
-Description=Small description of the service
+Description=Copyparty: file server
 After=network.target
 
 [Service]
 Type=simple
 User=__APP__
 Group=__APP__
+Environment=XDG_CONFIG_HOME=__INSTALL_DIR__/.config
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/script
+ExecStart=__INSTALL_DIR__/venv/bin/python __INSTALL_DIR__/copyparty-sfx.py
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
 
